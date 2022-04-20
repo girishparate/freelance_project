@@ -10,7 +10,7 @@ urlpatterns = [
     path('member-signup', SignupMember.as_view(), name='member-signup'),
 
     # login api for member
-    path('member-login', SignupMember.as_view(), name='member-login'),
+    path('member-login', LoginMember.as_view(), name='member-login'),
 
     # forgot password for member
     path('forgot-password/<email>', ForgotPasswordMember.as_view(), name='forgot-password')
